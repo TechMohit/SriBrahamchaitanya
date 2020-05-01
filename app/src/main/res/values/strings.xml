@@ -1,0 +1,8 @@
+<resources>
+    <!--<string name="app_name">Benaka</string>-->
+   <!-- <string name="app_name">PrsOnline </string>-->
+   <string name="app_name">Sri BrahmaChaitanya </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

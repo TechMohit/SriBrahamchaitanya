@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fe3652</color>
+    <color name="colorPrimaryDark">#e02f49</color>
+    <color name="colorAccent">#e02f49</color>
+    <color name="whiteBackground">#707070</color>
+    <color name="blue">#0384EC</color>
+
+    <!--View Pager in Contact us-->
+    <bool name="default_circle_indicator_centered">true</bool>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+
+    <color name="inactive_indicatorblue">#96bedf</color>
+    <color name="inactive_indicatorred">#e07b89</color>
+    <color name="inactive_indicatorgreen">#c0d983</color>
+    <color name="trackBack">#eaedf2 </color>
+
+
+</resources>

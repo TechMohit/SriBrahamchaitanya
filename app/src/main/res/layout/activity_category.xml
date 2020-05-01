@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".category.CategoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/tvBack"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/back_arrow"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@mipmap/search_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/revBottom"
+                />
+
+            <RelativeLayout
+                android:id="@+id/revBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_card_view"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/img_cart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@mipmap/shopping_cart" />
+
+                <TextView
+                    android:id="@+id/tvCount"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/view_left"
+                    android:background="@mipmap/oval_pink"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_left"
+                    android:layout_width="0.5sp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_cart"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/view_left"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="₹0"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0.5sp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/txtCheckout"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/txtCheckout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@mipmap/right_arrow"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:padding="10dp"
+                    android:text="Checkout"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

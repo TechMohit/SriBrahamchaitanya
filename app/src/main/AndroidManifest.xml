@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="grossary.cyron.com.grossarybrch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:name="grossary.cyron.com.grossarybrch.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/appicontest"
+        android:label="@string/app_name"
+
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="grossary.cyron.com.grossarybrch.account.SigninActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="grossary.cyron.com.grossarybrch.account.SignupActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="grossary.cyron.com.grossarybrch.profile.ProfileActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="grossary.cyron.com.grossarybrch.HomeActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="grossary.cyron.com.grossarybrch.category.CategoryActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="grossary.cyron.com.grossarybrch.webview.WebViewActivity"
+            android:configChanges="orientation|screenSize" />
+    </application>
+
+</manifest>

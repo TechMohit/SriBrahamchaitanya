@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="20dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@color/whiteBackground"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvDatePlaced"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_circle_indicator_stroke_color"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Place on Thu 04 Oct, 6:00 pm"
+        android:textColor="@color/whiteBackground"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@color/whiteBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDatePlaced" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Schedule for Sat 06 Oct, 6 am - 10pm "
+        android:textColor="@color/whiteBackground"
+        android:textSize="15sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_round_corner_strip_grey"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="10dp"
+        android:text="Delivered by Nr Enterprises"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/tvProductName"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductName" />
+
+    <LinearLayout
+        android:id="@+id/linr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_round_corner_strip_grey_b"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tvDesc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/store" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:maxLines="2"
+                android:paddingRight="10dp"
+                android:text="Benaka Store - M.G Road sdsdsds"
+                android:textColor="@color/whiteBackground"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMrpPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingTop="5dp"
+                android:text="Delivery Charge"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvOrderId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingTop="5dp"
+                android:text="Order ID: ODR323142562"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/orderStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@mipmap/checked"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingTop="5dp"
+                android:text="Placed"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="right"
+                android:text="1,234.00"
+                android:textColor="@color/whiteBackground"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDeliveryCharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="right"
+                android:paddingTop="5dp"
+                android:text="Free"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:text="Final Payable Amount"
+        android:textColor="@color/whiteBackground"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/linr"
+        app:layout_constraintTop_toBottomOf="@+id/linr" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingRight="5dp"
+        android:text="1,234"
+        android:textColor="@color/whiteBackground"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/linr"
+        app:layout_constraintTop_toBottomOf="@+id/linr" />
+
+    <Button
+        android:id="@+id/btnDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_round_corner_red"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="View Details"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <Button
+        android:id="@+id/btnCancelOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_round_corner_red"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Cancel Order"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</android.support.constraint.ConstraintLayout>
